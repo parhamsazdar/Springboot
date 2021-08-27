@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>logiform</title>
+</head>
+<body>
+<form action="#" th:action="@{/login}" th:object="${userdata}" method="post">
+    <label>
+        UserName:
+        <input type="text" th:field="*{name}"></input>
+    </label>
+    <label>
+        Password:
+        <input type="text" th:field="*{password}"></input>
+    </label>
+    <input  type="submit" value="Submit"></input>
+
+</form>
+</body>
+</html>
